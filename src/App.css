@@ -1,0 +1,123 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #17181f;
+  --secondary-color: #ddd;
+}
+
+.light-theme {
+  /* Define styles for the light theme */
+  background-color: #ffffff; /* Light background color */
+  color: #000000; /* Dark text color */
+}
+
+.dark-theme {
+  /* Define styles for the dark theme */
+  background-color: #1f1f1f; /* Dark background color */
+  color: #ffffff; /* Light text color */
+}
+
+body {
+  background-color: #1f1f1f; /* Dark background color */
+  color: #ffffff; /* Light text color */
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+h1 span {
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input[type="date"] {
+  color: #777;
+}
+
+form div.basics {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+div.transactions {
+  margin-top: 10px;
+}
+
+div.transaction {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+  border-top: 1px solid #30313d;
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1rem;
+}
+
+div.transaction div.description {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price.green {
+  color: #1c1;
+}
+
+div.price.red {
+  color: #c11;
+}
+
+div.transaction div.datetime {
+  font-size: 0.7rem;
+  color: #888;
+}
